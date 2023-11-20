@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 350px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    padding: 20px;  
+    overflow: hidden;
+    margin: 0 auto;
+}
+.top{
+    position: relative;
+}
+
+.top img{
+    width: 310px;
+    border-radius: 10px;
+    display: block;
+}
+
+.content h1{
+    color: #fff;
+    font-size: 22px;
+    padding: 15px 0;
+}
+.content p{
+    color: hsl(215, 51%, 70%);
+    font-weight:500;
+    padding-bottom: 20px;
+}
+
+.equi{
+    display: flex;
+}
+
+.equi img{
+    width: 15px;
+    height: 22px;
+}
+
+.equi p {
+    font-size: 18px;
+    font-weight: bold;
+    color: hsl(178, 100%, 50%);
+    padding-left: 10px;
+}
+.time-left{
+    display: flex;
+}
+.time-left img{
+    width: 22px;
+    height: 22px;
+}
+.time-left p{
+    padding-left: 10px;
+}
+.equi-part{
+    display: flex;
+    justify-content: space-between;
+}
+.horizontal{
+    color: hsl(215, 32%, 27%);
+}
+.content{
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+}
+
+.creation{
+    padding-top: 20px;
+    display: flex;
+}
+.creation img{
+    width: 40px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+}
+.creation p{
+    padding-top: 8px;
+    padding-left: 6px;
+    color:hsl(215, 51%, 70%);
+}
+.content h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+span{
+    color: #fff;
+    padding-left: 4px;
+}
+span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.img-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(178, 100%, 50%,.5);
+    display: none;
+}
+.img-overlay img{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.top:hover .img-overlay{
+    display: block;
+}
+
